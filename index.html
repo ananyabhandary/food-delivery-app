@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover restaurants, browse menus and order food in a few taps." />
+  <title>Bitezy – Food Delivery &amp; Restaurant Discovery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="logo" href="#/" aria-label="Bitezy home"><span aria-hidden="true">🍴</span> Bitezy</a>
+      <nav class="topbar__nav" aria-label="Main">
+        <a href="#/" class="navlink">Discover</a>
+        <a href="#/orders" class="navlink">Orders</a>
+        <a href="#/cart" class="cart-link" id="cart-link" aria-label="Cart, 0 items">
+          <span aria-hidden="true">🛒</span>
+          <span class="badge" id="cart-badge" hidden>0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
